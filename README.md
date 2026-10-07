@@ -1,1 +1,1 @@
-# visual-toy-dodo
+# dodo-visual-toy
