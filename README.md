@@ -1,14 +1,14 @@
-# Smudge
+# Jelly
 
-A tiny WebGL toy: type a word, push the halftone ink around with your pointer, let go and watch it spring back like jelly.
+A tiny WebGL toy: type a word, push it around with your pointer, let go and watch it spring back like jelly.
 
-**Live:** _add link after deploying (`vercel`, or import the repo on vercel.com — no config needed)_
+**Live:** _add link after deploying (`vercel`, or import the repo on vercel.com, no config needed)_
 
 ## Play
 
 - **Move** to push the ink, **hold** to pull harder
 - **Type** anywhere to change the word (spaces stack words on separate lines)
-- **Ink** swatches, **Dots** (cell size), **Jelly** (spring damping: dead → wobbly), **PNG** saves the current frame
+- **Ink** swatches, **Dots** (cell size), **Jelly** (spring damping: dead → wobbly), **Save** downloads the current frame as a PNG
 
 ## Run
 
@@ -21,7 +21,7 @@ Next.js (App Router) + React for the shell, three.js for the WebGL2 render passe
 
 ## What this is
 
-This is the v1 toy — originally plain HTML/CSS/JS with raw WebGL2 (`index.html` + `style.css` + `main.js`) — ported onto the same Next.js/React/three.js/GSAP stack used by the v2 "Plates" toy, so both versions live on one codebase.
+This is the v1 toy, originally plain HTML/CSS/JS with raw WebGL2 (`index.html` + `style.css` + `main.js`), ported onto the same Next.js/React/three.js/GSAP stack used by the v2 "Plates" toy, so both versions live on one codebase.
 
 Halftone is usually a static filter. Here it behaves like a physical material:
 

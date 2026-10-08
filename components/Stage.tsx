@@ -70,11 +70,11 @@ export default function Stage() {
     <main className="stage">
       <canvas ref={canvasRef} className="field" aria-label="Interactive halftone text. Move the pointer to push the ink." />
 
-      {failed && <p className="fail">Smudge needs WebGL2, which your browser doesn&apos;t seem to support.</p>}
+      {failed && <p className="fail">Jelly needs WebGL2, which your browser doesn&apos;t seem to support.</p>}
 
       <header className="title">
-        <h1>Smudge</h1>
-        <p>halftone ink, jelly physics</p>
+        <h1>Jelly</h1>
+        <p>push it, watch it bounce back</p>
       </header>
 
       <p ref={hintRef} className="hint">push it &middot; hold to pull harder &middot; type to change</p>
@@ -119,7 +119,7 @@ export default function Stage() {
           <input type="range" min={0} max={100} step={1} value={jelly} onChange={(e) => setJelly(+e.target.value)} />
         </label>
 
-        <button type="button" className="save" aria-label="Save as PNG" onClick={() => engine.current?.save()}>PNG</button>
+        <button type="button" className="save" aria-label="Save as PNG" onClick={() => engine.current?.save()}>Save</button>
       </form>
     </main>
   );

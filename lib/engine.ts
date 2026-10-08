@@ -168,7 +168,7 @@ export class SmudgeEngine {
       if (!blob) return;
       const a = document.createElement('a');
       a.href = URL.createObjectURL(blob);
-      a.download = `smudge-${(this.text.trim() || 'blank').replace(/\W+/g, '-').toLowerCase()}.png`;
+      a.download = `jelly-${(this.text.trim() || 'blank').replace(/\W+/g, '-').toLowerCase()}.png`;
       a.click();
       setTimeout(() => URL.revokeObjectURL(a.href), 2000);
     }, 'image/png');
