@@ -140,9 +140,9 @@ export class PlatesEngine {
     }));
   }
 
-  clear(ux = 0.5, uy = 0.5) {
+  clear(ux?: number, uy?: number) {
     if (this.wipe.r > 0) return;
-    this.wipeC.set(ux, uy);
+    this.wipeC.set(ux ?? this.target.x, uy ?? this.target.y);
     this.wipe.r = 0.001;
     this.tweens.push(gsap.to(this.wipe, {
       r: 1.9, duration: 1.15, ease: 'power2.out',
