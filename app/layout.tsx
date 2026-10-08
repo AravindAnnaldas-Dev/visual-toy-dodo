@@ -1,6 +1,6 @@
 import './globals.css';
 
-export const metadata = { title: 'dodo-visual-toy' };
+export const metadata = { title: 'Liquid Ledger — Dodo Payments' };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
